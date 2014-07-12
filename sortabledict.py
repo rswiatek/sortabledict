@@ -52,7 +52,7 @@ class SortableDict(dict):
 
     def sortedItems(self, *args):
         returnFunc  = lambda x: x
-        key = str
+        key = itemgetter(0)
         if args:
             for arg in args:
                 if not callable(arg):
@@ -62,8 +62,8 @@ class SortableDict(dict):
                             str(arg) +
                             '" is not recognized for the sorted functions'
                         )
-                    else:
-                        key = itemgetter(1) if 'value' in args else itemgetter(0,1)
+                    elif arg == 'value':
+                        key = itemgetter(1)
                 else: 
                     returnFunc = arg
         return list(returnFunc(sorted(super(SortableDict, self).items(), key=key)))

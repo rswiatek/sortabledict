@@ -53,12 +53,12 @@ Calling this extension from the commandline provides the following output:
     SortableDict.sortedValues(reversed): [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0] 
 
     ***** SortableDict.sortedItems ******
-    SortableDict.sortedItems(): [('A', 6), ('B', 0), ('C', 3), ('D', 10), ('a', 2), ('b', 1), ('c', 8), ('d', 7), (1, 5), (2, 4), (3, 9)]
-    SortableDict.sortedItems('key'): [(1, 5), (2, 4), (3, 9), ('A', 6), ('B', 0), ('C', 3), ('D', 10),('a', 2), ('b', 1), ('c', 8), ('d', 7)]
+    SortableDict.sortedItems(): [(1, 5), (2, 4), (3, 9), ('A', 6), ('B', 0), ('C', 3), ('D', 10), ('a', 2), ('b', 1), ('c', 8), ('d', 7)]
+    SortableDict.sortedItems('key'): [(1, 5), (2, 4), (3, 9), ('A', 6), ('B', 0), ('C', 3), ('D', 10), ('a', 2), ('b', 1), ('c', 8), ('d', 7)]
     SortableDict.sortedItems('value'): [('B', 0), ('b', 1), ('a', 2), ('C', 3), (2, 4), (1, 5), ('A', 6), ('d', 7), ('c', 8), (3, 9), ('D', 10)]
-    SortableDict.sortedItems(reversed): [(3, 9), (2, 4), (1, 5), ('d', 7), ('c', 8), ('b', 1), ('a', 2), ('D', 10), ('C', 3), ('B', 0), ('A', 6)]
+    SortableDict.sortedItems(reversed): [('d', 7), ('c', 8), ('b', 1), ('a', 2), ('D', 10), ('C', 3), ('B', 0), ('A', 6), (3, 9), (2, 4), (1, 5)]
     SortableDict.sortedItems('key', reversed): [('d', 7), ('c', 8), ('b', 1), ('a', 2), ('D', 10), ('C', 3), ('B', 0), ('A', 6), (3, 9), (2, 4), (1, 5)]
-    SortableDict.sortedItems('value', reversed): [('D', 10), (3, 9), ('c', 8), ('d', 7), ('A', 6), (1, 5), (2, 4), ('C', 3), ('a', 2), ('b', 1), ('B', 0)] 
+    SortableDict.sortedItems('value', reversed): [('D', 10), (3, 9), ('c', 8), ('d', 7), ('A', 6), (1, 5), (2, 4), ('C', 3), ('a', 2), ('b', 1), ('B', 0)]
 
     ***** SortableDict.keysSortedByValue *****
     SortableDict.keysSortedByValue(): ['B', 'b', 'a', 'C', 2, 1, 'A', 'd', 'c', 3, 'D']
