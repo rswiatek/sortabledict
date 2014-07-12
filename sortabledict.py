@@ -63,7 +63,7 @@ class SortableDict(dict):
                             '" is not recognized for the sorted functions'
                         )
                     elif arg.lower() == 'value':
-                        key = itemgetter(1)
+                        key = itemgetter(1,0)
                 else: 
                     returnFunc = arg
         return list(returnFunc(sorted(super(SortableDict, self).items(), key=key)))
@@ -81,7 +81,7 @@ class SortableDict(dict):
         return list(returnFunc(outList))
 
     def example(self):
-        testString = "{'b' : 1, 'A' : 6, 1 : 5, 'C' : 3, 'c' : 8, 2 : 4, 'a' : 2, 3 : 9, 'd' : 7, 'B' : 0, 'D' : 10}"
+        testString = "{'b' : 1, 'A' : 6, 1 : 5, 'C' : 3, 'c' : 8, 2 : 4, 'a' : 2, 3 : 8, 'd' : 7, 'B' : 0, 'D' : 8}"
         test = SortableDict(eval(testString))
         print test.__doc__, '\n'
         print "*****", "INPUT", "*****"
