@@ -62,7 +62,7 @@ class SortableDict(dict):
                             str(arg) +
                             '" is not recognized for the sorted functions'
                         )
-                    elif arg == 'value':
+                    elif arg.lower() == 'value':
                         key = itemgetter(1)
                 else: 
                     returnFunc = arg
