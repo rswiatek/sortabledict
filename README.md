@@ -41,29 +41,30 @@ Calling this extension from the commandline provides the following output:
      
 
     ***** INPUT *****
-    This is the input string for SortableDict: {'b' : 1, 'A' : 6, 1 : 5, 'C' : 3, 'c' : 8, 2 : 4, 'a' : 2, 3 : 9, 'd' : 7, 'B' : 0, 'D' : 10}
-    Original dict as evaluated: {'A': 6, 1: 5, 'C': 3, 3: 9, 'D': 10, 'c': 8, 2: 4, 'B': 0, 'a': 2, 'b': 1, 'd': 7} 
+    This is the input string for SortableDict: {'b' : 1, 'A' : 6, 1 : 5, 'C' : 3, 'c' : 8, 2 : 4, 'a' : 2, 3 : 8, 'd' : 7, 'B' : 0, 'D' : 8}
+    Original dict as evaluated: {'A': 6, 1: 5, 'C': 3, 3: 8, 'D': 8, 'c': 8, 2: 4, 'B': 0, 'a': 2, 'b': 1, 'd': 7} 
 
     ***** SortableDict.sortedKeys() ******
     SortableDict.sortedKeys [1, 2, 3, 'A', 'B', 'C', 'D', 'a', 'b', 'c', 'd']
     SortableDict.sortedKeys(reversed): ['d', 'c', 'b', 'a', 'D', 'C', 'B', 'A', 3, 2, 1] 
 
     ***** SortableDict.sortedValues ******
-    SortableDict.sortedValues(): [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    SortableDict.sortedValues(reversed): [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0] 
+    SortableDict.sortedValues(): [0, 1, 2, 3, 4, 5, 6, 7, 8, 8, 8]
+    SortableDict.sortedValues(reversed): [8, 8, 8, 7, 6, 5, 4, 3, 2, 1, 0] 
 
     ***** SortableDict.sortedItems ******
-    SortableDict.sortedItems(): [(1, 5), (2, 4), (3, 9), ('A', 6), ('B', 0), ('C', 3), ('D', 10), ('a', 2), ('b', 1), ('c', 8), ('d', 7)]
-    SortableDict.sortedItems('key'): [(1, 5), (2, 4), (3, 9), ('A', 6), ('B', 0), ('C', 3), ('D', 10), ('a', 2), ('b', 1), ('c', 8), ('d', 7)]
-    SortableDict.sortedItems('value'): [('B', 0), ('b', 1), ('a', 2), ('C', 3), (2, 4), (1, 5), ('A', 6), ('d', 7), ('c', 8), (3, 9), ('D', 10)]
-    SortableDict.sortedItems(reversed): [('d', 7), ('c', 8), ('b', 1), ('a', 2), ('D', 10), ('C', 3), ('B', 0), ('A', 6), (3, 9), (2, 4), (1, 5)]
-    SortableDict.sortedItems('key', reversed): [('d', 7), ('c', 8), ('b', 1), ('a', 2), ('D', 10), ('C', 3), ('B', 0), ('A', 6), (3, 9), (2, 4), (1, 5)]
-    SortableDict.sortedItems('value', reversed): [('D', 10), (3, 9), ('c', 8), ('d', 7), ('A', 6), (1, 5), (2, 4), ('C', 3), ('a', 2), ('b', 1), ('B', 0)]
+    SortableDict.sortedItems(): [(1, 5), (2, 4), (3, 8), ('A', 6), ('B', 0), ('C', 3), ('D', 8), ('a', 2), ('b', 1), ('c', 8), ('d', 7)]
+    SortableDict.sortedItems('key'): [(1, 5), (2, 4), (3, 8), ('A', 6), ('B', 0), ('C', 3), ('D', 8), ('a', 2), ('b', 1), ('c', 8), ('d', 7)]
+    SortableDict.sortedItems('value'): [('B', 0), ('b', 1), ('a', 2), ('C', 3), (2, 4), (1, 5), ('A', 6), ('d', 7), (3, 8), ('D', 8), ('c', 8)]
+    SortableDict.sortedItems(reversed): [('d', 7), ('c', 8), ('b', 1), ('a', 2), ('D', 8), ('C', 3), ('B', 0), ('A', 6), (3, 8), (2, 4), (1, 5)]
+    SortableDict.sortedItems('key', reversed): [('d', 7), ('c', 8), ('b', 1), ('a', 2), ('D', 8), ('C', 3), ('B', 0), ('A', 6), (3, 8), (2, 4), (1, 5)]
+    SortableDict.sortedItems('value', reversed): [('c', 8), ('D', 8), (3, 8), ('d', 7), ('A', 6), (1, 5), (2, 4), ('C', 3), ('a', 2), ('b', 1), ('B', 0)] 
 
     ***** SortableDict.keysSortedByValue *****
-    SortableDict.keysSortedByValue(): ['B', 'b', 'a', 'C', 2, 1, 'A', 'd', 'c', 3, 'D']
-    SortableDict.keysSortedByValue(reversed): ['D', 3, 'c', 'd', 'A', 1, 2, 'C', 'a', 'b', 'B'] 
+    SortableDict.keysSortedByValue(): ['B', 'b', 'a', 'C', 2, 1, 'A', 'd', 3, 'D', 'c']
+    SortableDict.keysSortedByValue(reversed): ['c', 'D', 3, 'd', 'A', 1, 2, 'C', 'a', 'b', 'B'] 
 
     ***** SortableDict.valuesSortedByKey *****
-    SortableDict.valuesSortedByKey(): [5, 4, 9, 6, 0, 3, 10, 2, 1, 8, 7]
-    SortableDict.valuesSortedByKey(reversed): [7, 8, 1, 2, 10, 3, 0, 6, 9, 4, 5]
+    SortableDict.valuesSortedByKey(): [5, 4, 8, 6, 0, 3, 8, 2, 1, 8, 7]
+    SortableDict.valuesSortedByKey(reversed): [7, 8, 1, 2, 8, 3, 0, 6, 8, 4, 5] 
+
