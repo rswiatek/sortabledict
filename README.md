@@ -27,7 +27,7 @@ Calling this extension from the commandline provides the following output:
                 dict.sortedItems('key', reversed) - returns (key, value) tuples reverse sorted by key.  Key is the default value but this is accecpted for readability / clarity.
                 dict.sortedItems('values', reversed) - returns (key, value) tuples reverse sorted by value
 
-        <SortableDict>.keysSortedByValue() or <SortableDict>keysSortedByValue(reversed):
+        <SortableDict>.keysSortedByValue() or <SortableDict>.keysSortedByValue(reversed):
         - returns a list of keys either forward or reverse sorted by thier associated values.
 
         <SortableDict>.valuesSortedByKey() or <SortableDict>.valuesSortedByKey(reversed):
