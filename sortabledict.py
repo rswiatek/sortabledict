@@ -11,39 +11,59 @@ class SortableDict(dict):
 
     Usage:
 
-        <SortableDict>.sortedKeys() or <SortableDict>.sortedValues() with or without the reversed parameter:
-            - returns a list of the specified objects sortable via the builtin .sort() either normal or reversed.
+        <SortableDict>.sortedKeys() or <SortableDict>.sortedValues() with or without
+        the reversed parameter:
+            - returns a list of the specified objects sortable via the builtin
+              .sort() either normal or reversed.
             ex. dict.sortedleKeys()
                 dict.sortedleValues()
                 dict.sortedKeys(reversed) - list reverse sorted
                 dict.sortedValues(reversed) - list reverse sorted
 
-        <SortableDict>.sortedItems(<'key, 'value'>) or <SortableDictict>.sortedItems(<'key', value'>, reversed):
-            - return (key, value) tuples either sorted by key or value, either forward or reversed as specified.
-            ex. dict.sortedItems() - returns (key, value) tuples sorted forward by key by default
-                dict.sortedItems('key') - key is the default but this is accecpted for readability / clarity.  Same as
+        <SortableDict>.sortedItems(<'key, 'value'>)
+        or
+        <SortableDictict>.sortedItems(<'key', value'>, reversed):
+            - return (key, value) tuples either sorted by key or value, either
+              forward or reversed as specified.
+            ex. dict.sortedItems() - returns (key, value) tuples sorted forward by
+                                     key by default
+                dict.sortedItems('key') - key is the default but this is accecpted
+                                          for readability / clarity.  Same as
                                           dict.sortedItems().
-                dict.sortedItems('value') - returns (key, value) tuples sorted forward by value, sorting identical values by
-                                            key since keys are unique.
-                dict.sortedItems(reversed) - returns (key, value) tuples reverse sorted by key by default
-                dict.sortedItems('key', reversed) - returns (key, value) tuples reverse sorted by key.  Key is the default
-                                                    but this is accecpted for readability / clarity.
-                dict.sortedItems('values', reversed) - returns (key, value) tuples reverse sorted by value, sorting
-                                                       identical values by keys since they are unique.
+                dict.sortedItems('value') - returns (key, value) tuples sorted
+                                            forward by value, sorting identical
+                                            values by key since keys are unique.
+                dict.sortedItems(reversed) - returns (key, value) tuples reverse
+                                             sorted by key by default
+                dict.sortedItems('key', reversed) - returns (key, value) tuples
+                                                    reverse sorted by key.  Key is
+                                                    the default but this is accecpted
+                                                    for readability / clarity.
+                dict.sortedItems('values', reversed) - returns (key, value) tuples
+                                                       reverse sorted by value, sorting
+                                                       identical values by keys since
+                                                       they are unique.
 
-        <SortableDict>.keysSortedByValue() or <SortableDict>.keysSortedByValue(reversed):
-        - returns a list of keys either forward or reverse sorted by thier associated values.
+        <SortableDict>.keysSortedByValue()
+        or
+        <SortableDict>.keysSortedByValue(reversed):
+        - returns a list of keys either forward or reverse sorted by thier associated
+          values.
 
-        <SortableDict>.valuesSortedByKey() or <SortableDict>.valuesSortedByKey(reversed):
-        - returns a list of values either forward or reverse sorted by thier associated keys.
+        <SortableDict>.valuesSortedByKey()
+        or
+        <SortableDict>.valuesSortedByKey(reversed):
+        - returns a list of values either forward or reverse sorted by thier
+          associated keys.
 
         run ./sortabledict.py from command line for concrete examples.
 
-        Ideal usage is to copy this python class to an accessible directory and implement via 'from sorteddict import *' and
-        to initialize all dictionaries as <x> = SortableDict() or <x> = SortableDict(<dict>).
+        Ideal usage is to copy this python class to an accessible directory and
+        implement via 'from sorteddict import *' and to initialize all
+        dictionaries as <x> = SortableDict() or <x> = SortableDict(<dict>).
 
-        lambda's as sorting functions are now implemented.   The last "callable" arg in args will be used as the sorting
-        method.
+        lambda's as sorting functions are now implemented.   The last "callable"
+        arg in args will be used as the sorting method.
     """
 
     def sortedKeys(self, returnFunc=lambda x : x):
