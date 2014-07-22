@@ -28,8 +28,8 @@ class SortableDict(dict):
                 dict.sortedItems(reversed) - returns (key, value) tuples reverse sorted by key by default
                 dict.sortedItems('key', reversed) - returns (key, value) tuples reverse sorted by key.  Key is the default
                                                     but this is accecpted for readability / clarity.
-                dict.sortedItems('values', reversed) - returns (key, value) tuples reverse sorted by value, sorting identical
-                                                       values by keys since they are unique.
+                dict.sortedItems('values', reversed) - returns (key, value) tuples reverse sorted by value, sorting
+                                                       identical values by keys since they are unique.
 
         <SortableDict>.keysSortedByValue() or <SortableDict>.keysSortedByValue(reversed):
         - returns a list of keys either forward or reverse sorted by thier associated values.
