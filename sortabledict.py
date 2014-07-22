@@ -40,10 +40,10 @@ class SortableDict(dict):
         run ./sortabledict.py from command line for concrete examples.
 
         Ideal usage is to copy this python class to an accessible directory and implement via 'from sorteddict import *' and
-        to initialize all dictionaries as <x> = SortableDict()'
+        to initialize all dictionaries as <x> = SortableDict() or <x> = SortableDict(<dict>).
 
-        lambda's as sorting functions are now implemented.   As long as one of the parameters is a callable it will be used
-        as the sorting method. The last "callable" in the argument stack will be the sorting function.
+        lambda's as sorting functions are now implemented.   The last "callable" arg in args will be used as the sorting
+        method.
     """
 
     def sortedKeys(self, returnFunc=lambda x : x):
