@@ -11,8 +11,9 @@ Calling this extension from the commandline provides the following output:
 
     Usage:
 
-        <SortableDict>.sortedKeys() or <SortableDict>.sortedValues() with or without
-        the reversed parameter:
+        <SortableDict>.sortedKeys()
+        or
+        <SortableDict>.sortedValues() with or without the reversed parameter:
             - returns a list of the specified objects sortable via the builtin
               .sort() either normal or reversed.
             ex. dict.sortedleKeys()
