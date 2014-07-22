@@ -31,7 +31,8 @@ Calling this extension from the commandline provides the following output:
                                           accecpted for readability / clarity.
                                           same as dict.sortedItems().
                 dict.sortedItems('value') - returns (key, value) tuples sorted
-                                            forward by value
+                                            forward by value, , sorting by key if
+                                            values are equal.
                 dict.sortedItems(reversed) - returns (key, value) tuples reverse
                                              sorted by key by default
                 dict.sortedItems('key', reversed) - returns (key, value) tuples
@@ -52,7 +53,7 @@ Calling this extension from the commandline provides the following output:
         or
         <SortableDict>.valuesSortedByKey(reversed):
             - returns a list of values either forward or reverse sorted by thier
-              associated keys.
+              associated keys, further sorting equal values by key.
 
         run ./sortabledict.py from command line for concrete examples.
 
