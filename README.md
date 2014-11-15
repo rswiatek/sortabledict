@@ -32,7 +32,7 @@ Calling this extension from the commandline provides the following output:
                                           accecpted for readability / clarity.
                                           same as dict.sortedItems().
                 dict.sortedItems('value') - returns (key, value) tuples sorted
-                                            forward by value, , sorting by key if
+                                            forward by value, sorting by key if
                                             values are equal.
                 dict.sortedItems(reversed) - returns (key, value) tuples reverse
                                              sorted by key by default
@@ -59,7 +59,7 @@ Calling this extension from the commandline provides the following output:
         run ./sortabledict.py from command line for concrete examples.
 
         Ideal usage is to copy this python class to an accessible directory and
-        implement via 'from sorteddict import *' and to initialize all dictionaries
+        implement via 'from sortedable import *' and to initialize all dictionaries
         as <x> = SortableDict() or <x> = SortableDict(<dict>)
 
         lambda's as sorting functions are now implemented.   As long as one of the
