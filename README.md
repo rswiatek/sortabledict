@@ -59,7 +59,7 @@ Calling this extension from the commandline provides the following output:
         run ./sortabledict.py from command line for concrete examples.
 
         Ideal usage is to copy this python class to an accessible directory and
-        implement via 'from sortedable import *' and to initialize all dictionaries
+        implement via 'from sortabledict import *' and to initialize all dictionaries
         as <x> = SortableDict() or <x> = SortableDict(<dict>)
 
         lambda's as sorting functions are now implemented.   As long as one of the
