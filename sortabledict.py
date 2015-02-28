@@ -108,7 +108,7 @@ class SortableDict(dict):
         return list(returnFunc(outList))
 
     def example(self):
-        testString = "{'b' : 1, 'A' : 6, 1 : 5, 'C' : 3, 'c' : 8, 2 : 4, 'a' : 2, 3 : 8, 'd' : 7, 'B' : 0, 'D' : 8}"
+        testString = "{'b' : 1, 'A' : 6, 1 : 5, 'C' : 3, 'c' : 8, 2 : 4, 'a' : 2, 3 : 10, 'd' : 7, 'B' : 0, 'D' : 9}"
         test = SortableDict(eval(testString))
         print test.__doc__, '\n'
         print "*****", "INPUT", "*****"
